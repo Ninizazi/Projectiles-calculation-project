@@ -1,0 +1,2 @@
+# Projectiles-calculation-project
+beginner
