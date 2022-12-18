@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projectile Motion Calculator</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div id="calculator-container">
+    <form>
+      <label for="initial-velocity">Initial Velocity (m/s):</label><br>
+      <input type="number" id="initial-velocity" name="initial-velocity"><br>
+      <label for="angle">Angle (degrees):</label><br>
+      <input type="number" id="angle" name="angle"><br>
+      <label for="acceleration">Acceleration (m/s<sup>2</sup>):</label><br>
+      <input type="number" id="acceleration" name="acceleration"><br>
+      <button type="button" onclick="calculate()">Calculate</button>
+    </form> 
+    <div id="result">
+      <p>Result:</p>
+      <p id="time"></p>
+      <p id="range"></p>
+      <p id="max-height"></p>
+    </div>
+  </div>
+  <script src="script1.js"></script>
+</body>
+</html>
