@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <style>
+      /* Add some styling for the page */
+      body {
+        font-family: sans-serif;
+        text-align: center;
+      }
+      .calculator {
+        /* Style the calculator container */
+        width: 400px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+      }
+      .calculator input[type="number"] {
+        /* Style the input fields */
+        width: 60%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .calculator input[type="submit"] {
+        /* Style the submit button */
+        width: 20%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .calculator input[type="submit"]:hover {
+        /* Add a hover effect for the submit button */
+        background-color: #45a049;
+      }
+      .calculator .result {
+        /* Style the result container */
+        margin: 20px 0;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .calculator .result p {
+        /* Style the result text */
+        font-size: 18px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calculator">
+      <h2>Projectile Calculator</h2>
+      <form>
+        <!-- Input fields for the initial velocity, angle, and time -->
+        <label for="initialVelocity">Initial Velocity (m/s):</label><br>
+        <input type="number" id="initialVelocity" name="initialVelocity"><br>
+        <label for="angle">Angle (degrees):</label><br>
+        <input type="number" id="angle" name="angle"><br>
+        <label for="time">Time (seconds):</label><br>
+        <input type="number" id="time" name="time"><br>
+        <!-- Submit button -->
+        <input type="submit" value="Calculate">
+      </form>
+      <!-- Result container -->
+      <div class="result">
+        <p>Result:</p>
+      </div>
+    </div>
+  </body>
+</html>
